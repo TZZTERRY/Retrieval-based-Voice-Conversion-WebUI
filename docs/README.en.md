@@ -20,13 +20,19 @@ An easy-to-use Voice Conversion framework based on VITS.<br><br>
 
 [**English**](./README.en.md) | [**中文简体**](../README.md) | [**日本語**](./README.ja.md) | [**한국어**](./README.ko.md) ([**韓國語**](./README.ko.han.md))
 
-> Check our [Demo Video](https://www.bilibili.com/video/BV1pm4y1z7Gm/) here!
 
-> Realtime Voice Conversion Software using RVC : [w-okada/voice-changer](https://github.com/w-okada/voice-changer)
+Check our [Demo Video](https://www.bilibili.com/video/BV1pm4y1z7Gm/) here!
+
+Realtime Voice Conversion Software using RVC : [w-okada/voice-changer](https://github.com/w-okada/voice-changer)
+
+> A online demo using RVC that convert Vocal to Acoustic Guitar audio：https://huggingface.co/spaces/lj1995/vocal2guitar
+
+> Vocal2Guitar demo video：https://www.bilibili.com/video/BV19W4y1D7tT/
 
 > The dataset for the pre-training model uses nearly 50 hours of high quality VCTK open source dataset.
 
 > High quality licensed song datasets will be added to training-set one after another for your use, without worrying about copyright infringement.
+
 ## Summary
 This repository has the following features:
 + Reduce tone leakage by replacing source feature to training-set feature using top1 retrieval;
@@ -55,8 +61,6 @@ curl -sSL https://install.python-poetry.org | python3 -
 poetry install
 ```
 You can also use pip to install the dependencies
-
-**Notice**: `faiss 1.7.2` will raise Segmentation Fault: 11 under `MacOS`, please use `pip install faiss-cpu==1.7.0` if you use pip to install it manually.
 
 ```bash
 pip install -r requirements.txt
