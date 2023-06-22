@@ -1,1 +1,1 @@
-# This file is for testing purpose only. Pleaase ignore
+# This file is for testing purpose only. Please ignore
